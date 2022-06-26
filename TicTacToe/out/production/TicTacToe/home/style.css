@@ -1,0 +1,50 @@
+.button
+{
+-fx-background-color :  #5d0d6b;
+-fx-text-fill : #ffffff;
+-fx-background-radius: 0;
+}
+.button:hover{
+-fx-background-color : #030303;
+}
+.button:pressed
+{
+-fx-background-color :  #ffffff;
+-fx-text-fill : #030303;
+}
+
+.buttonGame
+{
+-fx-background-color : #030303;
+-fx-text-fill : #f8faf7;
+}
+.buttonGame:hover{
+-fx-background-color : #5d0d6b;
+-fx-background-radius: 0;
+}
+.buttonGame:pressed
+{
+-fx-background-color : #030303;
+-fx-text-fill : #f8faf7;
+}
+.buttonGame:disabled
+{
+-fx-background-color : #030303;
+-fx-opacity: 1;
+-fx-text-fill : #f8faf7;
+}
+
+.buttonRestart
+{
+-fx-background-color :  #030303;
+-fx-text-fill : #ffffff;
+-fx-background-radius: 0;
+}
+.buttonRestart:hover{
+-fx-background-color : #5d0d6b;
+}
+.buttonRestart:pressed
+{
+-fx-background-color :  #ffffff;
+-fx-text-fill : #030303;
+}
