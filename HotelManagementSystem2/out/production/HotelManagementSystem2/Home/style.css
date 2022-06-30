@@ -1,0 +1,38 @@
+.button
+{
+-fx-background-color : #326789;
+-fx-text-fill : #e7e5e5;
+}
+
+.button:hover{
+-fx-background-color : #E65C4F;
+}
+
+.button:pressed
+{
+-fx-background-color : #78a6c8;
+}
+
+.search
+{
+-fx-background-color: #e9eef2;
+-fx-border-radius: 2em;
+-fx-border-color: #326789;
+-fx-text-fill: #326789;
+-fx-prompt-text-fill: #326789;
+}
+
+.textField
+{
+-fx-background-color: #e9eef2;
+-fx-border-radius: 5;
+-fx-border-color: #326789;
+-fx-text-fill: #326789;
+-fx-prompt-text-fill: #326789;
+}
+
+.bottomDash
+{
+-fx-background-color : #326789;
+-fx-text-fill : #e7e5e5;
+}

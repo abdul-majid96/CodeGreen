@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="myAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #e9eef2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Home.Controller">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="183.0" style="-fx-background-color: #326789;">
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="Admin" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDB" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" stylesheets="@style.css" text="Dashboard">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_home_32px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnGuest" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" stylesheets="@style.css" text="Guests">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_contacts_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" stylesheets="@style.css" text="Bookings">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_calendar_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" stylesheets="@style.css" text="Rooms">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_watch_tv_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" stylesheets="@style.css" text="Food">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_food_bar_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="194.0" stylesheets="@style.css" text="Services">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_car_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnExit" alignment="BASELINE_LEFT" graphicTextGap="22.0" mnemonicParsing="false" onAction="#handleCloseButtonAction" prefHeight="42.0" prefWidth="194.0" stylesheets="@style.css" text="Exit">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_shutdown_32px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            <Label prefHeight="24.0" prefWidth="95.0" text="Version: 1.0.0" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="24.0" prefWidth="95.0" text="CodeGreen" textFill="WHITE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <StackPane layoutX="183.0" prefHeight="600.0" prefWidth="817.0" style="-fx-background-color: #e9eef2;">
+         <children>
+            <Pane fx:id="pnDashboard" prefHeight="554.0" prefWidth="793.0">
+               <children>
+                  <VBox layoutX="7.0" layoutY="230.0" prefHeight="188.0" prefWidth="100.0" spacing="20.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="Name">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="Gender">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="Country">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="100.0" text="Phone">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <TextField layoutX="590.0" layoutY="47.0" prefHeight="27.0" prefWidth="183.0" promptText="search" styleClass="search" stylesheets="@style.css" />
+                  <Label layoutX="57.0" layoutY="25.0" text="Dashboard" textFill="#e65c4f">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="45.0" layoutY="72.0" prefHeight="92.0" prefWidth="746.0" spacing="80.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label fx:id="lable_registered" text="11" textFill="#2a73ff">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Registered Guests">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="20" textFill="#26bfbc">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Total Rooms">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="11" textFill="#fa5f7e">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Booked Rooms">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="9" textFill="#de0000">
+                                 <font>
+                                    <Font name="System Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Available Rooms">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </HBox>
+                  <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="749.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_search_32px.png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutX="365.0" layoutY="230.0" prefHeight="154.0" prefWidth="163.0">
+                     <children>
+                        <Button fx:id="btnAddGuest" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleButtonAction"  prefHeight="45.0" prefWidth="146.0" stylesheets="@style.css" text="Add Guest">
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_add_32px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="btnRemoveGuest" graphicTextGap="10.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="146.0" stylesheets="@style.css" text="Remove Guest">
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_trash_32px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="118.0" layoutY="230.0" prefHeight="188.0" prefWidth="216.0" spacing="20.0">
+                     <children>
+                        <TextField fx:id="txtName" prefHeight="25.0" prefWidth="216.0" promptText="Enter Full Name..." styleClass="textField" stylesheets="@style.css" />
+                        <TextField fx:id="txtGender" prefHeight="25.0" prefWidth="216.0" promptText="Specify your gender..." styleClass="textField" stylesheets="@style.css" />
+                        <TextField fx:id="txtCountry" prefHeight="25.0" prefWidth="216.0" promptText="Choose your Country..." styleClass="textField" stylesheets="@style.css" />
+                        <TextField fx:id="txtContact" prefHeight="25.0" prefWidth="216.0" promptText="Enter your phone number..." styleClass="textField" stylesheets="@style.css" />
+                     </children>
+                  </VBox>
+                  <ImageView fitHeight="224.0" fitWidth="244.0" layoutX="563.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/C1.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="45.0" layoutY="440.0" prefHeight="102.0" prefWidth="746.0" spacing="75.0">
+                     <children>
+                        <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #009393;" styleClass="bottomDash" stylesheets="@style.css" text="\$ 20,095">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Dollar_Coin_32px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #B73A5c;" styleClass="bottomDash" stylesheets="@style.css" text="1,534">
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_contacts_32px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button graphicTextGap="10.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #EF885D;" styleClass="bottomDash" stylesheets="@style.css" text="1,523">
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_check_circle_32px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="45.0" layoutY="551.0" prefHeight="35.0" prefWidth="746.0" spacing="220.0">
+                     <children>
+                        <Label text="Revenue">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Check in">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label text="Check out">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
